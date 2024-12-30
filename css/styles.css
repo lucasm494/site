@@ -1,0 +1,54 @@
+/* Enable smooth scrolling for the entire document */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Padding for the main content area */
+main {
+    padding: 0;
+}
+
+/* Padding for each section */
+section {
+    padding: 50px 0;
+    background-color: white; /* Ensure sections have a background color */
+}
+
+/* Styles for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Full-screen section styles */
+.full-screen {
+    position: relative;
+    height: 100vh;
+    background: url('../img/wallpaperlucas.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Overlay styles for the full-screen section */
+.full-screen .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    position: relative;
+}
