@@ -1,3 +1,4 @@
+ */
 /* Enable smooth scrolling for the entire document */
 html {
     scroll-behavior: smooth;
@@ -9,6 +10,53 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+}
+
+/* Styles for the sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Styles for the open button */
+.open-btn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
 }
 
 /* Padding for the main content area */
@@ -25,30 +73,17 @@ section {
 /* Styles for the footer */
 footer {
     background-color: #333;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 1em 0;
 }
 
-/* Full-screen section styles */
-.full-screen {
-    position: relative;
-    height: 100vh;
-    background: url('../img/wallpaperlucas.png') no-repeat center center/cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    z-index: 1;
+/* Change the color of the hrefs in the footer */
+footer a {
+    color: #ffffff;
+    text-decoration:none; 
 }
 
-/* Overlay styles for the full-screen section */
-.full-screen .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 2;
-    position: relative;
+footer a:hover {
+    color: #ffcc00;
 }

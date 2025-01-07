@@ -3,16 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>MFLEEK</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
+    <button class="open-btn" onclick="toggleNav()">☰</button>
+    <div id="mySidebar" class="sidebar">
+        <a href="#home">Home</a>
+        <a href="#signup">Sign Up</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
     <main>
         <section id="home" class="full-screen">
+            <div class="background-text">
+                <span>M</span><span>F</span><span>L</span><span>E</span><span>E</span><span>K</span>
+                <span>M</span><span>F</span><span>L</span><span>E</span><span>E</span><span>K</span>
+                <span>M</span><span>F</span><span>L</span><span>E</span><span>E</span><span>K</span>
+                <span>M</span><span>F</span><span>L</span><span>E</span><span>E</span><span>K</span>
+                <span>M</span><span>F</span><span>L</span><span>E</span><span>E</span><span>K</span>
+                <span>M</span><span>F</span><span>L</span><span>E</span><span>E</span><span>K</span>
+                <span>M</span><span>F</span><span>L</span><span>E</span><span>E</span><span>K</span>
+            </div>
             <div class="overlay" data-aos="fade-up">
-                <h2>Welcome to My Website</h2>
-                <p>This is a brief introduction.</p>
+                <h2>MFLEEK Music</h2>
+                <p>This is a test.</p>
+            </div>
+        </section>
+        <section id="signup" data-aos="fade-up">
+            <h2>Sign Up</h2>
+            <p>Provide your email to get more information in the future.</p>
+            <form id="signup-form">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <a href="#" onclick="toggleTerms(event)">Terms</a>
+            <div id="terms" class="hidden">
+                <p>By submitting my information, I agree to receive personalized updates and marketing messages about MFLEEK based on my information, interests, activities, website visits and device data and in accordance with the Privacy Policy. I understand that I can opt-out at any time by emailing +emaildecancelamento@mfleek.com+.</p>
             </div>
         </section>
         <section id="about" data-aos="fade-up">
@@ -25,13 +57,17 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Your Website</p>
+        <p>&copy; 2025 MFLEEK MUSIC</p>
         <p>
-            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
-            <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/mfleekmusic/" target="_blank">Instagram</a> |
+            <a href="https://www.youtube.com/channel/UCFMu5jpLK5kde9R8K60W-tQ" target="_blank">Youtube</a>
         </p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/signup.js"></script>
 </body>
 </html>

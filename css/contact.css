@@ -1,0 +1,17 @@
+/* Styles for the contact section */
+#contact {
+    background-color: #fff;
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}

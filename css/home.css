@@ -1,0 +1,53 @@
+/* Full-screen section styles */
+.full-screen {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Background text styles */
+.background-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 0; /* Remove gap between grid items */
+    color: grey;
+    font-size: 9vw;
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.background-text span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.background-text span:hover {
+    color: white;
+    opacity: 1;
+}
+
+/* Overlay styles for the full-screen section */
+.full-screen .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    position: relative;
+}
