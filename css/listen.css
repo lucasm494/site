@@ -1,0 +1,73 @@
+#listen {
+    background-color: #ffffff;
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#listen h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#listen p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    left: -15px; /* Add some space to the left */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 15px; /* Add some space between the images */
+}
+
+.carousel-item {
+    min-width: 33.33%; /* Show 3 items at a time */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    width: 120%; /* Make the image take the full width of the item */
+    height: 80%; /* Maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and cover the square */
+    display: block;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
