@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MFLEEK</title>
+    <link rel="icon" href="img/icone.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/listen.css">
@@ -11,12 +12,18 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <button class="open-btn" onclick="toggleNav()">☰</button>
     <div id="mySidebar" class="sidebar">
         <a href="#home">Home</a>
         <a href="#signup">Sign Up</a>
+        <a href="#listen">Listen</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </div>
@@ -49,25 +56,31 @@
             </div>
         </section>
         <section id="listen" data-aos="fade-up">
-            <h2>Listen</h2>
+            <h2>Music Work</h2>
             <div class="carousel">
                 <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
                 <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="img/ncsu.jpg" alt="Music 1">
+                    <div class="carousel-item" data-url="https://example.com/ncsu">
+                        <img src="img/ncsu.jpg" alt="Music 1" >
+                        <p>Nothing Can Save Us</p>
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/alone.jpg" alt="Music 2">
+                    <div class="carousel-item" data-url="https://example.com/alone">
+                        <img src="img/alone.jpg" alt="Music 2" >
+                        <p>Alone</p>
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/se.jpg" alt="Music 3">
+                    <div class="carousel-item" data-url="https://ditto.fm/self-esteem-m-fleek?fbclid=PAZXh0bgNhZW0CMTEAAabUkJWE8F_GHK_9Ze1mNAj0h_SiBCuqwnSLh-J3WAGIjtFx71xHg6eeSls_aem_-hxqK0U7SwLiI9QAb--F7w">
+                        <img src="img/se.jpg" alt="Music 3" >
+                        <p>Self Esteem</p>
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/dh.jpg" alt="Music 4">
+                    <div class="carousel-item" data-url="https://ditto.fm/doomed-heart?fbclid=PAZXh0bgNhZW0CMTEAAaa_DIoPC6s27iKfNk8-BSzpixutkRC5J925SYmy0uXQV6d94ivSkEiKnWQ_aem_uB7bD5GGuJzokcinGB_tPg">
+                        <img src="img/dh.jpg" alt="Music 4" >
+                        <p>Doomed Heart</p>
                     </div>
                 </div>
                 <button class="next" onclick="moveSlide(1)">&#10095;</button>
             </div>
+            <div class="carousel-description"></div>
+            <button class="listen-button" onclick="myHref()">Listen Now</button>
         </section>
         <section id="about" data-aos="fade-up">
             <h2>About</h2>

@@ -1,50 +1,61 @@
 #listen {
-    background-color: #ffffff;
+    background-color: #b12c2c;
     color: #333;
-    padding: 50px 0;
+    padding: 120px 0;
     text-align: center;
 }
 
 #listen h2 {
     font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#listen p {
-    font-size: 1.2em;
-    line-height: 1.5;
+    color: #ffffff;
+    margin-top: -50px;
+    margin-bottom: 80px;
 }
 
 /* Carousel styles */
 .carousel {
     position: relative;
     width: 80%;
-    height: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+    height: 300px;
+    max-width: 850px;
+    margin: 50px auto; /* Center the carousel and add some space to the top */
+    padding: 0 27px;
     overflow: hidden;
-    left: -15px; /* Add some space to the left */
 }
 
 .carousel-inner {
+    position: relative;
     display: flex;
     transition: transform 0.5s ease-in-out;
-    gap: 15px; /* Add some space between the images */
+    gap: 10px; /* Add some space between the images */
+    top: 10%;
 }
 
 .carousel-item {
-    min-width: 33.33%; /* Show 3 items at a time */
+    min-width: 33%; /* Show 3 items at a time */
     box-sizing: border-box;
     display: flex;
+    flex-direction: column; /* Stack image and description vertically */
     justify-content: center;
     align-items: center;
 }
 
+.carousel-item img:hover {
+    transform: scale(1.02);
+    filter: brightness(1.2);
+}
+
+.carousel-item p {
+    color:#ff3a3a00;
+    cursor: default;
+}
+
 .carousel-item img {
-    width: 120%; /* Make the image take the full width of the item */
-    height: 80%; /* Maintain aspect ratio */
+    width: 250px; /* Make the image take the full width of the item */
+    height: 250px; /* Maintain aspect ratio */
     object-fit: cover; /* Maintain aspect ratio and cover the square */
     display: block;
+    align-items: center;
 }
 
 /* Navigation buttons */
@@ -52,22 +63,54 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(156, 42, 42, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 40px 10px;
     cursor: pointer;
     z-index: 1000;
 }
 
 .prev {
-    left: 10px;
+    left: -2px;
 }
 
 .next {
-    right: 10px;
+    right: -4px;
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(113, 27, 27, 0.8);
+}
+
+/* Description styles */
+.carousel-description {
+    text-align: center;
+    font-size: 1.5em; /* Adjust font size if needed */
+    color: #ffffff;
+    z-index: 10; /* Ensure it is above other elements */
+    position: relative; /* Position it absolutely within the carousel item */
+    bottom: 40px; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+   
+    padding: 5px 10px; /* Optional: Add padding for better appearance */
+}
+
+.listen-button {
+    background-color: #f1f1f1fd;
+    color: #b12c2c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.listen-button:hover {
+    background-color: #fffffffd;
+    color: #b12c2c;
 }
